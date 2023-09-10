@@ -1,0 +1,112 @@
+@font-face {
+    font-family: pricedown;
+    src: url(../fonts/pricedown\ bl.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: pricedown;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-img.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    color: #CECBC2;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 20px;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+ul li.active a {
+    color: #6080A4;
+}
+
+ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #6080A4;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #6080A4;
+}
+
+ul li a:hover:after {
+    width: 100%;
+}
+
+.logo img {
+    float: left;
+    padding: 10px;
+    width: 150px;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+.title h1 {
+    color: #CECBC2;
+    font-size: 40px;
+}
+
+.buttons {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    margin-top: 1em;
+}
+
+.btn {
+    color: #CECBC2;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 1.5em;
+    position: relative;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    background-color: #6080A4;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 1em;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    color: #6080A4;
+}
+
+.btn:hover:after {
+    width: 100%;
+}
